@@ -1,4 +1,4 @@
-package com.galvanize.cryptozoology;
+package com.galvanize.cryptozoology.repository;
 
 import com.galvanize.cryptozoology.model.Animal;
 import org.springframework.data.jpa.repository.JpaRepository;

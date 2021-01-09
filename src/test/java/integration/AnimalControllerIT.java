@@ -1,4 +1,4 @@
-package com.galvanize.cryptozoology;
+package integration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.galvanize.cryptozoology.model.Animal;
