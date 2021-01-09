@@ -68,8 +68,6 @@ public class AnimalControllerIT {
         ;
     }
 
-
-
     //Utility Method
     void setupDb(){
         List<Animal> animals = new ArrayList<>();
