@@ -8,6 +8,7 @@ class CryptozoologyApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }
