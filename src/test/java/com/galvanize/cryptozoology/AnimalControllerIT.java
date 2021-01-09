@@ -3,7 +3,6 @@ package com.galvanize.cryptozoology;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.galvanize.cryptozoology.model.Animal;
 import com.galvanize.cryptozoology.repository.AnimalRepository;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;

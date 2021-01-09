@@ -12,8 +12,11 @@ import java.util.List;
 @RequestMapping("/api/animal")
 public class AnimalController {
 
-    @Autowired
     private AnimalService animalService;
+
+    AnimalController(AnimalService animalService) {
+        this.animalService = animalService;
+    }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
