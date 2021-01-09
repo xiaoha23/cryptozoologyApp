@@ -13,10 +13,12 @@ public class AnimalService {
     private AnimalRepository animalRepository;
 
     public Animal createAnimal(Animal animal) {
-        return animalRepository.save(animal);
+        Animal animalSaved = animalRepository.save(animal);
+        return animalSaved;
     }
 
     public List<Animal> getAllAnimals() {
-        return null;
+        List<Animal> animals = animalRepository.findAll();
+        return animals;
     }
 }
