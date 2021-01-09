@@ -5,6 +5,8 @@ import com.galvanize.cryptozoology.repository.AnimalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class AnimalService {
     @Autowired
@@ -12,5 +14,9 @@ public class AnimalService {
 
     public Animal createAnimal(Animal animal) {
         return animalRepository.save(animal);
+    }
+
+    public List<Animal> getAllAnimals() {
+        return null;
     }
 }

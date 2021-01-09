@@ -1,25 +1,31 @@
-As zookeeper, I want to add animals to my zoo.
-
-Rule: Animal should have a name and a type (flying, swimming, walking)
-
-When I add an animalDto
-Then it is in my zoo
-As zookeeper, I want to view animals of my zoo.
-
 Resource Summary
 
-URI	HTTP Method	HTTP Status	Description
+URI	                            |   HTTP Method |   HTTP    |Status     | Description
+galvanize.com/api/animal	    |   POST	    |   201     |CREATED	| Form submission to add a new animal.
+galvanize.com/api/animal/all    |   GET         |   200     |OK         | Get All animals
+
 sappyllc.com/api/customers	GET	200 OK	Return a list of customers.
-galvanize.com/api/animal	POST	201 CREATED	Form submission to add a new animal.
 sappyllc.com/api/customers/	GET	200 OK	Return an existing customer.
 sappyllc.com/api/customers/	PUT	200 OK	Update and return an existing customer.
 sappyllc.com/api/customers/	PATCH	200 OK	Partially update an existing customer.
 sappyllc.com/api/customers/
 
 
+As zookeeper, I want to add animals to my zoo.
+
+Rule: Animal should have a name and a type (flying, swimming, walking)
+
+When I add an animal
+Then it is in my zoo
+___________________
+
+As zookeeper, I want to view animals of my zoo.
 Given I have added animals to my zoo
 When I check my zoo
 Then I see all the animals
+
+___________________
+
 As a zookeper, I want to feed my animals.
 
 Rule: Animal moods are unhappy or happy. They are unhappy by default.
