@@ -1,7 +1,9 @@
 package com.galvanize.cryptozoology;
 
+import com.galvanize.cryptozoology.model.Animal;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,7 +12,7 @@ public class AnimalController {
 
     @PostMapping("/api/animal")
     @ResponseStatus(HttpStatus.CREATED)
-    public void createAnimal() {
-
+    public Animal createAnimal(@RequestBody Animal animal) {
+        return animal;
     }
 }
